@@ -1,0 +1,158 @@
+  body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: none;
+            overflow: hidden;
+        }
+
+        .offer-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 620px;
+            padding: 22px;
+            background: #1c1c1e;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            border: 1px solid #2f2f2f;
+            animation: slideIn 0.25s ease;
+            display: none;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -55%);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .offer-header {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .offer-header i {
+            font-size: 48px;
+            color: #4d9fff;
+            margin-bottom: 10px;
+        }
+
+        .offer-header h2 {
+            color: #ffffff;
+            font-weight: 600;
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        .vehicle-info {
+            background: #2a2a2d;
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 18px;
+            border: 1px solid #333;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #333;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .info-label,
+        .info-value {
+            font-size: 14px;
+        }
+
+        .info-label {
+            color: #a0a0a0;
+            font-weight: 500;
+        }
+
+        .info-value {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .price-value {
+            color: #43e97b;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .btn-offer {
+            flex: 1;
+            padding: 11px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            border: 1px solid #3a3a3a;
+            background: #2b2b2e;
+            color: #e4e4e4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.15s ease;
+        }
+
+        .btn-accept {
+            border-color: #2e5f3a;
+        }
+
+        .btn-accept:hover {
+            background: #243a2c;
+            border-color: #3e8f5a;
+            color: #7CFFB2;
+        }
+
+        .btn-decline {
+            border-color: #5a2b2b;
+        }
+
+        .btn-decline:hover {
+            background: #3a2323;
+            border-color: #a04444;
+            color: #ff8a8a;
+        }
+
+        .btn-offer i {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .btn-close {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            font-size: 20px;
+            color: #777;
+            cursor: pointer;
+            border: none;
+            background: none;
+            transition: color 0.2s;
+        }
+
+        .btn-close:hover {
+            color: #fff;
+        }
